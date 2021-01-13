@@ -1,13 +1,17 @@
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 
 public class History {
-    public Date date;
-    public Operation operation;
+    public ArrayList<Operations> history;
 
-    public Date getDate() {
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        Date date = new Date();
-        return (formatter.format(date));
+    public History() {
+        history = new ArrayList<>();
+    }
+
+    public void addTransaction(Operations transaction) {
+        history.add(transaction);
+    }
+
+    public ArrayList<Operations> getHistory() {
+        return history;
     }
 }
