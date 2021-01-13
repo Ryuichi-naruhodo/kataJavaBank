@@ -18,6 +18,10 @@ public class Account {
         return balance;
     }
 
+    public void printSolde() {
+        history.displayHistory();
+    }
+
     public double deposit(double amount) {
         Operations operation = new Operations(amount, "Depot");
         balance += amount;

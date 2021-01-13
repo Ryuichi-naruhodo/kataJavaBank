@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Account account = new Account();
-        History history = new History();
         double input;
         String prenom;
         String choice = new String();
@@ -46,7 +45,7 @@ public class Main {
                     break;
                 }
                 case "solde": {
-                    System.out.println(history.getHistory().toString());
+                    account.printSolde();
                     break;
                 }
                 case "quitter": {

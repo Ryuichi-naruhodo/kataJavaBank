@@ -20,4 +20,8 @@ public class Operations {
         formater = new SimpleDateFormat("'le' dd MMMM yyyy 'à' hh:mm:ss");
         return (formater.format(aujourdhui));
     }
+
+    public String format() {
+        return "[" + amount + "€, " + type + ", " + date + "]";
+    }
 }

@@ -11,7 +11,11 @@ public class History {
         history.add(transaction);
     }
 
-    public ArrayList<Operations> getHistory() {
-        return history;
+    public void displayHistory() {
+        String solde = new String();
+        for (int i = 0; i < history.size(); i++) {
+            solde += history.get(i).format() + "\n";
+        }
+        System.out.println(solde);
     }
 }
